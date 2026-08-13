@@ -13,9 +13,11 @@ export function SiteFooter() {
         <div className="text-sm">
           <p className="font-medium">Visit</p>
           <p className="mt-2 text-muted-foreground">
-            12 Garden Lane, Jubilee Hills
+            Plot no 185, Survey No 218, 1/2, 5th Ave,
             <br />
-            Hyderabad, 500033
+            Vayupuri, Sainikpuri, Secunderabad,
+            <br />
+            Telangana 500094
           </p>
           <p className="mt-2 text-muted-foreground">Open daily · 7:30am – 11pm</p>
         </div>

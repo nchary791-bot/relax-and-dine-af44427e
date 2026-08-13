@@ -41,7 +41,7 @@ const highlights = [
 ];
 
 function Home() {
-  const featured = (menu[0]?.items ?? []).slice(0, 3);
+  const featured = (menu.find((c) => c.id === "hot-coffee")?.items ?? []).slice(0, 3);
 
   return (
     <div>
@@ -102,7 +102,7 @@ function Home() {
       <section className="mx-auto max-w-6xl px-5 py-16">
         <div className="grid grid-cols-[minmax(0,1fr)_auto] items-end gap-4 sm:flex sm:justify-between">
           <div className="min-w-0">
-            <h2 className="text-3xl sm:text-4xl">From the espresso bar</h2>
+            <h2 className="text-3xl sm:text-4xl">From the coffee bar</h2>
             <p className="mt-2 text-sm text-muted-foreground">Everyday favourites, priced kindly.</p>
           </div>
           <Link to="/menu" className="shrink-0 text-sm font-medium text-primary hover:underline">
@@ -116,9 +116,6 @@ function Home() {
                 <h3 className="text-xl">{item.name}</h3>
                 <span className="font-display text-lg text-primary">₹{item.price}</span>
               </div>
-              {item.telugu && (
-                <p className="mt-1 text-sm text-muted-foreground">{item.telugu}</p>
-              )}
               <p className="mt-3 text-sm text-muted-foreground">{item.description}</p>
             </div>
           ))}

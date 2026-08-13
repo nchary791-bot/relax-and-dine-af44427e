@@ -102,7 +102,7 @@ function Home() {
       <section className="mx-auto max-w-6xl px-5 py-16">
         <div className="grid grid-cols-[minmax(0,1fr)_auto] items-end gap-4 sm:flex sm:justify-between">
           <div className="min-w-0">
-            <h2 className="text-3xl sm:text-4xl">From the espresso bar</h2>
+            <h2 className="text-3xl sm:text-4xl">From the coffee bar</h2>
             <p className="mt-2 text-sm text-muted-foreground">Everyday favourites, priced kindly.</p>
           </div>
           <Link to="/menu" className="shrink-0 text-sm font-medium text-primary hover:underline">

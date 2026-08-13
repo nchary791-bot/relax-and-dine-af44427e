@@ -116,9 +116,6 @@ function Home() {
                 <h3 className="text-xl">{item.name}</h3>
                 <span className="font-display text-lg text-primary">₹{item.price}</span>
               </div>
-              {item.telugu && (
-                <p className="mt-1 text-sm text-muted-foreground">{item.telugu}</p>
-              )}
               <p className="mt-3 text-sm text-muted-foreground">{item.description}</p>
             </div>
           ))}

@@ -54,9 +54,6 @@ function MenuPage() {
                   <div className="grid grid-cols-[minmax(0,1fr)_auto] items-baseline gap-3">
                     <div className="min-w-0">
                       <h3 className="truncate text-lg">{item.name}</h3>
-                      {item.telugu && (
-                        <p className="truncate text-sm text-muted-foreground">{item.telugu}</p>
-                      )}
                     </div>
                     <span className="shrink-0 font-display text-lg text-primary">
                       ₹{item.price}

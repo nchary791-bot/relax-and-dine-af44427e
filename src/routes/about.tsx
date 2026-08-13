@@ -60,8 +60,14 @@ function AboutPage() {
         <div>
           <h2 className="text-2xl">Where to find us</h2>
           <p className="mt-3 text-sm text-muted-foreground">
-            12 Garden Lane, Jubilee Hills, Hyderabad 500033. Street parking behind the building,
-            and yes — the corner table by the window is real.
+            Plot no 185, Survey No 218, 1/2, 5th Ave,
+            <br />
+            Vayupuri, Sainikpuri, Secunderabad,
+            <br />
+            Telangana 500094
+          </p>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Street parking is available nearby, and yes — the corner table by the window is real.
           </p>
         </div>
         <div>

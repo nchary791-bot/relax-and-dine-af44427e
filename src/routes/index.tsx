@@ -41,7 +41,7 @@ const highlights = [
 ];
 
 function Home() {
-  const featured = (menu[0]?.items ?? []).slice(0, 3);
+  const featured = (menu.find((c) => c.id === "hot-coffee")?.items ?? []).slice(0, 3);
 
   return (
     <div>

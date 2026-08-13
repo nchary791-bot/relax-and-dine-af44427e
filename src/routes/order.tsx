@@ -24,7 +24,7 @@ const allItems = menu.flatMap((c) => c.items.map((i) => ({ ...i, category: c.tit
 function OrderPage() {
   const [cart, setCart] = useState<Record<string, number>>({});
   const [mode, setMode] = useState<"pickup" | "delivery">("pickup");
-  const [category, setCategory] = useState<string>(menu[0].title);
+  const [category, setCategory] = useState<string>(menu[0]?.title ?? "");
 
   const visible = allItems.filter((i) => i.category === category);
   const total = useMemo(
